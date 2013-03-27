@@ -22,7 +22,7 @@ Description: A two-column fixed width template for 1024x768 resolutions.
 </head>
 <body>
 <div id="logo">
-  <h1><a href="?menu=home">CMS Shop !</a></h1>
+	<h1><a href="?menu=home">CMS Shop !</a></h1>
 	<h2>By <a href="http://ultwimate.com/Follow/ariff_41/">Arif Wiguna</a>
 </h2>
 </div>
@@ -68,6 +68,7 @@ Description: A two-column fixed width template for 1024x768 resolutions.
 			elseif ($_GET['menu']=='chat') {require "chat.php";}
 			elseif ($_GET['menu']=='edit_data') {require "edit_member.php";}
 			elseif ($_GET['menu']=='beli_barang') {require "beli_barang.php";}
+			elseif ($_GET['menu']=='video') {require "video.php";}
 		?>
 				</div>
 			</div>
@@ -97,7 +98,7 @@ Description: A two-column fixed width template for 1024x768 resolutions.
 						<li><a href="beli_barang.php">Tampilkan Barang</a></li>
 						<li><a href="?menu=edit_data">Edit Data</a></li>
 						<li><a href="?menu=chat">Chat</a></li>
-						<li><a href="?menu=edit_pass" id="<?php echo $_SESSION['username']; ?>" name="<?php echo $_SESSION['username']; ?>">Ganti 		Password</a></li>
+						<li><a href="?menu=edit_pass">Ganti Password</a></li>
 						<?php } else {?>
 						<li><a href="?menu=profil">Profil Admin</a></li>
 						<?php } ?>
