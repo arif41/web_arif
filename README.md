@@ -1,2 +1,1 @@
-web_arif
-========
+Web project by Arif Wiguna
