@@ -14,4 +14,9 @@
     <td>:</td>
     <td>+628995636319</td>
   </tr>
+  <tr>
+    <td>Negara</td>
+    <td>:</td>
+    <td>Indonesia</td>
+  <tr>
 </table>
