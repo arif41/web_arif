@@ -1,7 +1,7 @@
 <?php
 $total=0;
-if (!empty($_SESSION['basket'])) { //cek isi variabel _SESSION['basket']
-foreach ($_SESSION['basket'] as $key => $val) {
+if (!empty($_SESSION['cart'])) { //cek isi variabel _SESSION['basket']
+foreach ($_SESSION['cart'] as $key => $val) {
 $total +=$val; //menghitung jumlah barang
 }
 echo 'Ada <strong>'.$total.'</strong> barang di keranjang<br />';
