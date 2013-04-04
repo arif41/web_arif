@@ -2,11 +2,7 @@
   <div align="center">
     <marquee><p>Bicara Dengan Kami</p></marquee>
     <table width="428" border="0">
-      <tr>
-        <td width="117">Username</td>
-        <td width="19">:</td>
-        <td width="270"><input type="text" name="username" /></td>
-      </tr>
+        <input name="<?php echo $username; ?>" type="hidden"/>
       <tr>
         <td>Gambar</td>
         <td>:</td>
@@ -38,11 +34,12 @@ $tmp_gambar=$_FILES["gambar"]["tmp_name"];
 $proses_upload=move_uploaded_file($tmp_gambar,$upload_dir);
 
 //isi chat
-$username=$_POST['username'];
+$username=$_SESSION['username'];
 $chat=$_POST['chat'];
+$waktu=date(d-M-y H:i);
 
 //memasukan data ke database
-$upload_database=mysql_query("insert into chat value ('$username','$nama_gambar','$chat')");
+$upload_database=mysql_query("insert into chat value ('$username','$nama_gambar','$chat','$waktu')");
 }
 ?>
 </div>
