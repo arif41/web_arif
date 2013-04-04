@@ -9,10 +9,12 @@
   $username=$tampil["username"];
   $gambar=$tampil['gambar'];
   $chat=$tampil['chat'];
+  $waktu=$tampil['waktu'];
   ?>
  	<tr><td height="104"><img src="dirchat/<?php echo $gambar; ?>" width="100" height="100"></td>
     <td><?php echo $username; ?></td>
     <td><?php echo $chat; ?></td>
+    <td><?php echo $waktu; ?></td>
  </tr>
   <?php $no++;  } ?>
 </table>
