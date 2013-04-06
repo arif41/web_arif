@@ -13,7 +13,11 @@ $gambar_barang=$dir.$gambar_barang;
 
 <form action="proses_edit.php" method="post" enctype="multipart/form-data" name="form1">
   <table width="691" height="185" border="1" align="center">
-  <input name="id_barang" type="hidden" value="<?php echo $id_barang; ?>" id="id_barang"/> <?php echo $id_barang; ?>
+	<tr>
+      <td width="138"><div align="center">ID Barang</div></td>
+      <td width="8">:</td>
+      <td width="523"><input name="id_barang" type="hidden" value="<?php echo $id_barang; ?>" id="id_barang"/> <?php echo $id_barang; ?></td>
+    </tr>
     <tr>
       <td><div align="center">Nama Barang</div></td>
       <td>:</td>
@@ -36,7 +40,7 @@ $gambar_barang=$dir.$gambar_barang;
 	<tr>
 		<td height="34"><div align="center">Gambar</div></td>
 		<td>:</td>
-		<td><input type='file' name="gambar_barang" id="gambar_barang" value="<?php echo $gambar_barang; ?></td>
+		<td><input type='file' name="gambar_barang" id="gambar_barang" value="<?php echo $gambar_barang; ?>"/></td>
 	</tr>
   </table>
     <label>
